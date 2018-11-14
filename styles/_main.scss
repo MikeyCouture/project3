@@ -1,0 +1,40 @@
+body{
+    background: #0a0a3b;
+    width: 1290px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main{
+    margin: 0 auto;
+    display: flex;
+    .main-box{
+        height: 600px;
+        width: 600px;
+        border: 3px solid white;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .box{
+            border: 1px solid white;
+            width: calc(33.3%);
+            height: calc(33.3%);
+
+        }
+    }
+}
+
+.puzzle-Container{
+    display: flex;
+    flex-direction: column;
+}
