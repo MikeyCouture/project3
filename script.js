@@ -14,7 +14,6 @@ $(function () {
         $(this).addClass("boxShadow");
     });
     
-    
     // $(function(){
     //     $(".draggable").draggable();
     //     $(".droppable").droppable(
@@ -34,19 +33,47 @@ $(function () {
 
         if (imageChoice === boxChoice) {
             $(`.item${imageChoice}`).appendTo(`.box${boxChoice}`);
+            // $(`.box${boxChoice}`).empty();
         } else {
             alert("Try again!");
         }
 
         if ($(".puzzle-Container").children().length == 0) {
-            prompt("You win!");
+            setTimeout(function(){
+                console.log(setTimeout);
+                $(".winner-box").addClass("winner-Display");
+            }, 800);
+
         }
 
+        $(".play-Again").on("click", function(){
+            location.reload();
+        });
+
     });
+
+    // function shufflePicture() {
+    //     console.log("sh");
+    //     const parent = $("puzzle-Container");
+    //     const children = parent.children();
+    //     console.log(children);
+
+    //     while (children.length) {
+    //         console.log("running while");
+    //         parent.append(children.splice(Math.floor(Math.random() * children.length), 1));
+    //     }
+    // }
+
+    // shufflePicture();
+
 
 
 
 });
+
+
+
+
 
 
 

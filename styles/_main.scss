@@ -9,9 +9,6 @@ img{
     display: block;
 }
 
-a{
-    // margin: 3px;
-}
 
 header{
     margin: 0 auto;
@@ -34,6 +31,7 @@ header{
     p{
         color: white;
         font-size: 20px;
+        font-family: "Niramit";
     }
 
 }
@@ -48,15 +46,22 @@ main{
     .main-box{
         height: 608px;
         width: 610px;
-        border: 3px solid white;
+        border: 3px solid #f84800;
         margin: 0 auto 50px auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         .box{
-            border: 1px solid white;
+            border: 1px solid #f84800;
             width: calc(33.3%);
             height: calc(33.3%);
+            cursor: pointer;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Niramit";
+            font-size: 20px;
 
         }
     }
@@ -67,8 +72,9 @@ main{
     flex-direction: column;
 }
 
-.puzzle-Container-Two{
+.container-Two{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 0 auto;
 }
@@ -77,10 +83,52 @@ main{
     box-shadow: 0px 0px 25px #f84800;
 }
 
-// .item1 img{
-//     transform: rotate(4deg);
-// }
+.winner-box{
+    width: 55%;
+    height: 400px;
+    background: #e7e7e7;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 120%;
+    left: 20%;
+    right: 20%;
+    bottom: 40%;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 1%;
+}
+    .congrats{
+        color: #002654;
+        margin-top: 120px;
+    }
 
-// .item2 img{
-//     transform: rotate(-5deg);
-// }
+.winner-box p{
+    font-family: "Niramit";
+    font-size: 30px;
+    color: #002654;
+}
+
+button{
+    color: #002654;
+    font-family: "Niramit";
+    padding: 10px;
+    box-shadow: 2px 2px 2px #f84800;
+    border: 1px solid #002654;
+    transition: 0.5s;
+}
+button:hover{
+    color: white;
+    border: 1px solid #f84800;
+    background: #f84800;
+    box-shadow: 2px 2px 2px #002654;
+
+}
+
+.winner-Display{
+    display: block;
+}
