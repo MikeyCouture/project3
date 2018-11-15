@@ -9,6 +9,10 @@ img{
     display: block;
 }
 
+a{
+    // margin: 3px;
+}
+
 header{
     margin: 0 auto;
     display: flex;
@@ -37,11 +41,15 @@ header{
 main{
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
+    section{
+        display: flex;
+    }
     .main-box{
         height: 608px;
         width: 610px;
         border: 3px solid white;
-        margin: 50px auto;
+        margin: 0 auto 50px auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -57,6 +65,12 @@ main{
 .puzzle-Container{
     display: flex;
     flex-direction: column;
+}
+
+.puzzle-Container-Two{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .boxShadow{
