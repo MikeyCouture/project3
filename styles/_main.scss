@@ -56,12 +56,14 @@ main{
             width: calc(33.3%);
             height: calc(33.3%);
             cursor: pointer;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: "Niramit";
-            font-size: 20px;
+            p{
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Niramit";
+                font-size: 20px;
+            }
 
         }
     }

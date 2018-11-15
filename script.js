@@ -6,6 +6,7 @@ $(function () {
 // listening for an on click image
     let imageChoice;
     let boxChoice;
+    let numChoice;
 
     $(".item").on("click", function(event) {
         event.preventDefault();
@@ -14,26 +15,16 @@ $(function () {
         $(this).addClass("boxShadow");
     });
     
-    // $(function(){
-    //     $(".draggable").draggable();
-    //     $(".droppable").droppable(
-    //         {
-    //             drop: function () {
-    //                 alert("nice, keep going!");
-    //             }
-    //         });
-    // });
-
-
 // listening for an on click on box
     $(".box").on("click", function (event) {
         event.preventDefault();
         boxChoice = $(this).attr("data-box");
+        numChoice = $(this).children().remove();
         console.log(boxChoice);
+        console.log(numChoice);
 
         if (imageChoice === boxChoice) {
             $(`.item${imageChoice}`).appendTo(`.box${boxChoice}`);
-            // $(`.box${boxChoice}`).empty();
         } else {
             alert("Try again!");
         }
@@ -65,6 +56,18 @@ $(function () {
     // }
 
     // shufflePicture();
+
+
+       // $(function(){
+    //     $(".draggable").draggable();
+    //     $(".droppable").droppable(
+    //         {
+    //             drop: function () {
+    //                 alert("nice, keep going!");
+    //             }
+    //         });
+    // });
+
 
 
 
