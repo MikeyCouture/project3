@@ -133,10 +133,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 body {
-  background: #0a0a3b;
+  background: #002654;
   width: 1290px;
   max-width: 80%;
   margin: 0 auto; }
+
+img {
+  display: block; }
 
 header {
   margin: 0 auto;
@@ -152,7 +155,15 @@ header {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  height: 100vh; }
+  header h1 {
+    color: white;
+    font-size: 100px;
+    text-shadow: 1px 1px #f84800,  2px 2px #f84800,  3px 3px #f84800,  4px 4px #f84800,  5px 5px #f84800,  6px 6px #f84800,  7px 7px white; }
+  header p {
+    color: white;
+    font-size: 20px; }
 
 main {
   margin: 0 auto;
@@ -160,8 +171,8 @@ main {
   display: -ms-flexbox;
   display: flex; }
   main .main-box {
-    height: 600px;
-    width: 600px;
+    height: 608px;
+    width: 610px;
     border: 3px solid white;
     margin: 50px auto;
     display: -webkit-box;
@@ -186,3 +197,7 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.boxShadow {
+  -webkit-box-shadow: 0px 0px 25px #f84800;
+  box-shadow: 0px 0px 25px #f84800; }

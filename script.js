@@ -11,6 +11,7 @@ $(function () {
         event.preventDefault();
         imageChoice = $(this).attr("data-pic");
         console.log(imageChoice);
+        $(this).addClass("boxShadow");
     });
     
     
@@ -31,18 +32,14 @@ $(function () {
         boxChoice = $(this).attr("data-box");
         console.log(boxChoice);
 
-
         if (imageChoice === boxChoice) {
             $(`.item${imageChoice}`).appendTo(`.box${boxChoice}`);
-            // $(".item3").appendTo(".box3");
-            // $(".item4").appendTo(".box4");
-            // $(".item5").appendTo(".box5");
-            // $(".item6").appendTo(".box6");
-            // $(".item7").appendTo(".box7");
-            // $(".item8").appendTo(".box8");
-            // $(".item9").appendTo(".box9");
         } else {
             alert("Try again!");
+        }
+
+        if ($(".puzzle-Container").children().length == 0) {
+            prompt("You win!");
         }
 
     });
@@ -65,5 +62,5 @@ $(function () {
 
 // if they do not match, prompt "Try again!"
 
-// create another event listener for when divs have no 
+// create another event listener for when divs have no childen in them. if true, prompt win
 
