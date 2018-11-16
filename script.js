@@ -34,11 +34,10 @@ $(function () {
                 console.log(setTimeout);
                 $(".winner-box").addClass("winner-Display");
             }, 800);
-            
-
         }
 
         $(".play-Again").on("click", function(){
+            $("#pugPic1").attr("src", "./assets/Pug_Image2-1.jpg");
             location.reload();
         });
 
