@@ -136,35 +136,23 @@ body {
   background: #002654;
   width: 1290px;
   max-width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-image: url("../assets/noun_Pug_3170.svg");
+  background-size: 100px 82px;
+  background-blend-mode: overlay; }
 
 img {
   display: block; }
 
-header {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100vh; }
-  header h1 {
-    color: white;
-    font-size: 100px;
-    text-shadow: 1px 1px #f84800,  2px 2px #f84800,  3px 3px #f84800,  4px 4px #f84800,  5px 5px #f84800,  6px 6px #f84800,  7px 7px white; }
-  header p {
-    color: white;
-    font-size: 20px;
-    font-family: "Niramit"; }
+.item1 {
+  position: relative; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
 
 main {
   margin: 0 auto;
@@ -197,19 +185,22 @@ main {
       border: 1px solid #f84800;
       width: calc(33.3%);
       height: calc(33.3%);
-      cursor: pointer;
-      color: white;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      font-family: "Niramit";
-      font-size: 20px; }
+      cursor: pointer; }
+      main .main-box .box p {
+        color: #0006;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: "Niramit";
+        font-size: 70px;
+        font-weight: bold;
+        margin: 50px auto 0 auto; }
 
 .puzzle-Container {
   display: -webkit-box;
@@ -218,7 +209,10 @@ main {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .container-Two {
   display: -webkit-box;
@@ -293,3 +287,48 @@ button:hover {
 
 .winner-Display {
   display: block; }
+
+header {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 110vh; }
+  header h1 {
+    color: white;
+    font-size: 120px;
+    text-shadow: 1px 1px #f84800,  2px 2px #f84800,  3px 3px #f84800,  4px 4px #f84800,  5px 5px #f84800,  6px 6px #f84800,  7px 7px white; }
+  header p {
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: 'Niramit';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 24px; }
+  header ul {
+    padding: 0;
+    margin: 0; }
+    header ul li {
+      font-size: 10px;
+      font-size: 1rem;
+      font-family: 'Niramit';
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 1px;
+      line-height: 24px; }
+  header .fa-arrow-circle-down {
+    font-size: 40px;
+    color: white; }

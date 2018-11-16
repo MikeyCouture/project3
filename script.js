@@ -34,6 +34,7 @@ $(function () {
                 console.log(setTimeout);
                 $(".winner-box").addClass("winner-Display");
             }, 800);
+            
 
         }
 

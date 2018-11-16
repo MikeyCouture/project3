@@ -3,38 +3,28 @@ body{
     width: 1290px;
     max-width: 80%;
     margin: 0 auto;
+    background-image: url("../assets/noun_Pug_3170.svg");
+    background-size: 100px 82px;
+    background-blend-mode: overlay;
 }
 
 img{
     display: block;
 }
 
-
-header{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    h1{
-        color: white;
-        font-size: 100px;
-        text-shadow: 1px 1px #f84800, 
-        2px 2px #f84800, 
-        3px 3px #f84800, 
-        4px 4px #f84800, 
-        5px 5px #f84800, 
-        6px 6px #f84800, 
-        7px 7px white;
-    }
-    p{
-        color: white;
-        font-size: 20px;
-        font-family: "Niramit";
-    }
-
+.item1{
+    position: relative;
 }
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    // background: black;
+}
+
 
 main{
     margin: 0 auto;
@@ -57,12 +47,14 @@ main{
             height: calc(33.3%);
             cursor: pointer;
             p{
-                color: white;
+                color: #0006;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font-family: "Niramit";
-                font-size: 20px;
+                font-size: 70px;
+                font-weight: bold;
+                margin: 50px auto 0 auto;
             }
 
         }
@@ -72,6 +64,7 @@ main{
 .puzzle-Container{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .container-Two{

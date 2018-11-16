@@ -14,30 +14,38 @@
 </head>
 <body>
     <header>
-        <h1 class="animated infinite pulse">Pug Puzzle!</h1>
-        <p>instructions go here.</p>
+        <h1 class="animated infinite pulse slow">Pug Puzzle!</h1>
+        <p>Ready to solve the ultimate pug puzzle?!</p>
+        <ul class="instructions">
+            <li>Scroll down to begin the game.</li>
+            <li>You'll have 45 seconds to complete.</li>
+            <li>CLICK on the item first, followed by the corresponding box</li>
+            <li></li>
+            <li></li>
+        </ul>
+        <i class="fas fa-arrow-circle-down"></i>
     </header>
 
     <main>
-
-
         <div class="winner-box">
             <p class="congrats">Congrats! You're a expert Pug Puzzle Master!</p>
             <p>Play Again?</p>
             <button class="play-Again">Pug Yeah!</button>
         </div>
 
-
         <section>
 
             <div class="puzzle-Container">
-                <a href="" class="item item1 draggable" data-aos="zoom-in-right" data-aos-delay="300" data-pic="1"><img src="./assets/Pug_1.jpg" alt=""></a>
+                <a href="" class="item item1 draggable" data-aos="zoom-in-right" data-aos-delay="300" data-pic="1">
+                    <img src="./assets/Pug_1.jpg" alt="">
+                    <div class="overlay"></div>
+                </a>
+                
     
                 <a href="" class="item item2" data-aos="zoom-in-right" data-pic="2"><img src="./assets/Pug_2.jpg" alt=""></a>
     
                 <a href="" class="item item3" data-aos="fade-up-right"data-pic="3"><img src="./assets/Pug_3.jpg" alt=""></a>
             </div>
-
 
             <div class="main-box" data-aos="fade-up" data-aos-delay="1000">
                 <div class="box box1" data-box="1"><p class="num">1</p></div>
@@ -56,25 +64,15 @@
                 <a href="" class="item item6 draggable" data-aos="zoom-in-left" data-pic="6"><img src="./assets/Pug_6.jpg" alt=""></a>
                 <a href="" class="item item7 draggable" data-aos="fade-up-right" data-aos-delay="700" data-pic="7"><img src="./assets/Pug_7.jpg" alt=""></a>
             </div>
-
         </section>
-
-        <section class="two">
-
+        <section class="section-Two">
             <div class="puzzle-Container container-Two">
                 <a href="" class="item item4 animated fadeInUpBig" data-pic="4"><img src="./assets/Pug_4.jpg" alt=""></a>
-                <a href="" class="item item8 draggable" data-pic="8"><img src="./assets/Pug_8.jpg" alt=""></a>
-                <a href="" class="item item9 draggable" data-pic="9"><img src="./assets/Pug_9.jpg" alt=""></a>
+                <a href="" class="item item8 animated fadeInUpBig" data-pic="8"><img src="./assets/Pug_8.jpg" alt=""></a>
+                <a href="" class="item item9 animated fadeInUpBig" data-pic="9"><img src="./assets/Pug_9.jpg" alt=""></a>
             </div>
-
-
         </section>
-
-
     </main>
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
