@@ -25,15 +25,18 @@ $(function () {
 
         if (imageChoice === boxChoice) {
             $(`.item${imageChoice}`).appendTo(`.box${boxChoice}`);
+            $(`.item${imageChoice}`).removeClass("bord");
         } else {
-            alert("Try again!");
+            // alert("Try again!");
+            swal("Try again!", "", "error");
         }
 
         if ($(".puzzle-Container").children().length == 0) {
+            $(".box").removeClass("box-border");
             setTimeout(function(){
                 console.log(setTimeout);
                 $(".winner-box").addClass("winner-Display");
-            }, 800);
+            }, 1200);
         }
 
         $(".play-Again").on("click", function(){

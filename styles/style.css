@@ -132,6 +132,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background: #002654;
   width: 1290px;
@@ -146,6 +149,9 @@ img {
 
 .item1 {
   position: relative; }
+
+.bord {
+  border: 4px solid white; }
 
 .overlay {
   position: absolute;
@@ -182,7 +188,6 @@ main {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     main .main-box .box {
-      border: 1px solid #f84800;
       width: calc(33.3%);
       height: calc(33.3%);
       cursor: pointer; }
@@ -201,6 +206,9 @@ main {
         font-size: 70px;
         font-weight: bold;
         margin: 50px auto 0 auto; }
+
+.box-border {
+  border: 1px solid #f84800; }
 
 .puzzle-Container {
   display: -webkit-box;
@@ -222,14 +230,11 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin: 0 auto; }
 
 .boxShadow {
-  -webkit-box-shadow: 0px 0px 25px #f84800;
-  box-shadow: 0px 0px 25px #f84800; }
+  -webkit-box-shadow: 0px 0px 45px #f84800;
+  box-shadow: 0px 0px 45px #f84800; }
 
 .winner-box {
   width: 55%;
@@ -288,6 +293,9 @@ button:hover {
 .winner-Display {
   display: block; }
 
+.header-Wrapper {
+  width: 70%; }
+
 header {
   margin: 0 auto;
   display: -webkit-box;
@@ -303,9 +311,10 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 110vh; }
+  height: 120vh; }
   header h1 {
     color: white;
+    margin-top: 0;
     font-size: 120px;
     text-shadow: 1px 1px #f84800,  2px 2px #f84800,  3px 3px #f84800,  4px 4px #f84800,  5px 5px #f84800,  6px 6px #f84800,  7px 7px white; }
   header p {
@@ -316,10 +325,11 @@ header {
     text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
-    line-height: 24px; }
+    line-height: 24px;
+    text-shadow: 1px 1px black; }
   header ul {
     padding: 0;
-    margin: 0; }
+    margin: 60px; }
     header ul li {
       font-size: 10px;
       font-size: 1rem;
@@ -328,7 +338,13 @@ header {
       text-transform: uppercase;
       color: white;
       letter-spacing: 1px;
-      line-height: 24px; }
+      line-height: 24px;
+      text-shadow: 1px 1px black; }
   header .fa-arrow-circle-down {
     font-size: 40px;
-    color: white; }
+    color: white;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  header .fa-arrow-circle-down:hover {
+    color: #f84800; }

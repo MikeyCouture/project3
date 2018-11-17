@@ -1,12 +1,19 @@
+
+.header-Wrapper{
+    width: 70%;
+}
+
+
 header{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 120vh;
     h1{
         color: white;
+        margin-top: 0;
         font-size: 120px;
         text-shadow: 1px 1px #f84800, 
         2px 2px #f84800, 
@@ -24,7 +31,7 @@ header{
     }
     ul{
         padding: 0;
-        margin: 0;
+        margin: 60px;
         li{
             @include fontSize(10);
         }
@@ -32,6 +39,10 @@ header{
     .fa-arrow-circle-down{
             font-size: 40px;
             color: white;
+            transition: 0.3s;
         }
+    .fa-arrow-circle-down:hover{
+        color: #f84800;
+    }    
 
 }
