@@ -10,7 +10,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    height: 100vh;
     h1{
         color: white;
         margin-top: 0;
@@ -32,6 +32,8 @@ header{
     ul{
         padding: 0;
         margin: 60px;
+        list-style-type: none;
+        text-align: center;
         li{
             @include fontSize(10);
         }

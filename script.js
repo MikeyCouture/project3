@@ -31,12 +31,13 @@ $(function () {
             swal("Try again!", "", "error");
         }
 
-        if ($(".puzzle-Container").children().length == 0) {
+        if ($(".puzzle-Container").children().length == 0 && $(".container-Two").children().length == 0) {
             $(".box").removeClass("box-border");
+            $(".main-box").addClass("winner-Highlight");
             setTimeout(function(){
                 console.log(setTimeout);
                 $(".winner-box").addClass("winner-Display");
-            }, 1200);
+            }, 3000);
         }
 
         $(".play-Again").on("click", function(){
@@ -50,10 +51,7 @@ $(function () {
 
         setTimeout(function () {
             swal("Time is up!", "", "error");
-        }, 2000);
+        }, 34000);
     })
-
-
-
 
 });
