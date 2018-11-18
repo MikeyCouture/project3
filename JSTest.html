@@ -128,44 +128,48 @@
 
 
 
-
-
-
-
-
-
-
-
 // <!-- 5. -->
 
 
-    $(function () {
-
-        let counter = 30;
-        setInterval("timer()", 1000);
-        function timer() {
-            counter--;
-            $("#counter").text(counter);
-            if (counter === 0) {
-                clearInterval();
-            }
-        }
+    //     let counter = 30;
+    //     setInterval("timer()", 1000);
+    //     function timer() {
+    //         counter--;
+    //         $("#counter").text(counter);
+    //         if (counter === 0) {
+    //             clearInterval();
+    //         }
+    //     }
 
 
         // setTimeout(function () {
         //     alert("Hello");
         // }, 3000); 
 
+// <!-- 6. -->
 
+    $(function () {
+
+            const locations = {
+            park: 10,
+            forest: 1,
+            mountains: 14,
+            beach: 4,
+            indoors: 7
+        }
+        console.log(locations["indoors"]);
+
+        for (let elem in locations) {
+            console.log(elem, locations[elem]);
+        }
 
 
     });
 
+
     
     
-    
-    
-    
+
     
     </script>
 

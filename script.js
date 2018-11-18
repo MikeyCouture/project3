@@ -1,25 +1,33 @@
 
-$(function () { 
+const pugApp = {};
 
-    console.log("working!");
+let imageChoice;
+let boxChoice;
+let numChoice;
+let timeoutId;
 
-// listening for an on click image
-    let imageChoice;
-    let boxChoice;
-    let numChoice;
+pugApp.init = function () {
+    pugApp.listenForImageClick();
+    pugApp.listenForBoxClick();
+    pugApp.timeOutAndResize();
 
-    $(".item").on("click", function(event) {
+}
+
+pugApp.listenForImageClick = function () {
+
+    $(".item").on("click", function (event) {
         event.preventDefault();
         imageChoice = $(this).attr("data-pic");
         console.log(imageChoice);
         $(this).addClass("boxShadow");
     });
-    
-// listening for an on click on box
+}
+
+pugApp.listenForBoxClick = function () {
+
     $(".box").on("click", function (event) {
         event.preventDefault();
         boxChoice = $(this).attr("data-box");
-        // numChoice = $(this).children().remove();
         console.log(boxChoice);
         console.log(numChoice);
 
@@ -34,25 +42,43 @@ $(function () {
         if ($(".puzzle-Container").children().length == 0 && $(".container-Two").children().length == 0) {
             $(".box").removeClass("box-border");
             $(".main-box").addClass("winner-Highlight");
-            setTimeout(function(){
+            setTimeout(function () {
                 console.log(setTimeout);
                 $(".winner-box").addClass("winner-Display");
             }, 3000);
-        
+            clearTimeout(timeoutId);
         }
 
-        $(".play-Again").on("click", function(){
-            $("#pugPic1").attr("src", "./assets/Pug_Image2-1.jpg");
+        $(".play-Again").on("click", function () {
+            // $("#pugPic1").attr("src", "./assets/Pug_Image2-1.jpg");
             location.reload();
         });
-
     });
+}
 
-    $(".fas").on("click", function(){
-        setTimeout(function () {
+pugApp.timeOutAndResize = function () {
+
+    // $(".fas").on("click", function () {
+    //     setTimeout(function () {
+    //         swal("Time is up!", "", "error");
+    //     }, 34000);
+    //     if ($(".puzzle-Container").children().length == 0 && $(".container-Two").children().length == 0) {
+    //         clearTimeout(timeoutId);
+    //     }
+    // });
+
+    $(".fas").on("click", function () {
+        timeoutId = setTimeout(function () {
             swal("Time is up!", "", "error");
-        }, 34000);
+        }, 45000);
+
+        // if ($(".puzzle-Container").children().length == 0 && $(".container-Two").children().length == 0) {
+        //     clearTimeout(timeoutId);
+        // }
     });
+
+
+
 
 
     $(window).resize(function () {
@@ -62,7 +88,10 @@ $(function () {
 
         }
     });
+}
 
 
-
+$(function () {
+    pugApp.init();
 });
+
