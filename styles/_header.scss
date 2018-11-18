@@ -25,6 +25,7 @@ header{
     }
     p{
         @include fontSize(20);
+        margin: 0;
         // color: white;
         // font-size: 20px;
         // font-family: "Niramit";
@@ -42,9 +43,44 @@ header{
             font-size: 40px;
             color: white;
             transition: 0.3s;
+            margin-top: 20px;
         }
     .fa-arrow-circle-down:hover{
         color: #f84800;
     }    
 
 }
+
+
+
+@media(max-width: 1080px){
+    header h1{
+        font-size: 90px;
+    }
+
+    .header-Wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width: 900px){
+    header h1{
+        font-size: 70px;
+    }
+
+    header p{
+        font-size: 1.5rem;
+    }
+    header ul{
+        margin: 50px 0 50px 0;
+    }
+}
+
+@media(max-width: 660px){
+    header p{
+        font-size: 1.2rem;
+    }
+
+}
+
+

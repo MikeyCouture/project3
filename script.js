@@ -38,6 +38,7 @@ $(function () {
                 console.log(setTimeout);
                 $(".winner-box").addClass("winner-Display");
             }, 3000);
+        
         }
 
         $(".play-Again").on("click", function(){
@@ -48,10 +49,20 @@ $(function () {
     });
 
     $(".fas").on("click", function(){
-
         setTimeout(function () {
             swal("Time is up!", "", "error");
         }, 34000);
-    })
+    });
+
+
+    $(window).resize(function () {
+        if ($(window).width() < 1300) {
+            // do something here
+            $(".puzzle-Container").children().appendTo(`.container-Two`);
+
+        }
+    });
+
+
 
 });

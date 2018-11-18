@@ -72,11 +72,11 @@
 
 // <!-- 4. -->
 
-    $(function () {
+    // $(function () {
 
-        let imageChoice;
+    //     let imageChoice;
 
-        const pugImages = [
+    //     const pugImages = [
             // [
             //     { name: "pugPic1", image: "./assets/Pug_1.jpg" },
             //     { name: "pugPic2", image: "./assets/Pug_2.jpg" },
@@ -84,25 +84,28 @@
             // ],
 
 
-            [ "./assets/Pug_Image2-1.jpg","./assets/Pug_Image2-2.jpg","./assets/Pug_Image2-3.jpg" ],
+        //     [ "./assets/Pug_Image2-1.jpg","./assets/Pug_Image2-2.jpg","./assets/Pug_Image2-3.jpg" ],
 
-            [ "./assets/Pug_1.jpg", "./assets/Pug_2.jpg", "./assets/Pug_3.jpg"]
-        ];
+        //     [ "./assets/Pug_1.jpg", "./assets/Pug_2.jpg", "./assets/Pug_3.jpg"]
+        // ];
 
 
 
-        for (let i = 0; i < pugImages.length; i++){
-            for (let j = 0; j < pugImages[i].length; j++){
-                $(".pugPics").append(`<div><img src="${pugImages[i][j]}" class="pic"></div>`);
-            }
-        }
+    //     for (let i = 0; i < pugImages.length; i++){
+    //         for (let j = 0; j < pugImages[i].length; j++){
+    //             $(".pugPics").append(`<div><img src="${pugImages[i][j]}" class="pic"></div>`);
+    //         }
+    //     }
 
-        $(".pugPics").on("click", function(){
-            const imageChoice = $(this).attr("img src");
-            console.log(imageChoice);
-        });
+    //     $(".pugPics").on("click", function(){
+    //         const imageChoice = $(this).attr("img src");
+    //         console.log(imageChoice);
+    //     });
             
-    });
+    // });
+
+
+
 
 
     // selectedImagesArray = pugImages[0];
@@ -135,20 +138,28 @@
 
 // <!-- 5. -->
 
-// let counter = 30;
-// setInterval("timer()", 1000);
-// function timer(){
-//     counter--;
-//     $("#counter").text(counter);
-//     if(counter === 0){
-//         clearInterval();
-//     }
-// }
+
+    $(function () {
+
+        let counter = 30;
+        setInterval("timer()", 1000);
+        function timer() {
+            counter--;
+            $("#counter").text(counter);
+            if (counter === 0) {
+                clearInterval();
+            }
+        }
 
 
-// setTimeout(function () { 
-//     alert("Hello"); 
-// }, 3000);
+        // setTimeout(function () {
+        //     alert("Hello");
+        // }, 3000); 
+
+
+
+
+    });
 
     
     

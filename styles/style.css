@@ -138,7 +138,7 @@ html {
 body {
   background: #002654;
   width: 1290px;
-  max-width: 80%;
+  max-width: 75%;
   margin: 0 auto;
   background-image: url("../assets/noun_Pug_3170.svg");
   background-size: 100px 82px;
@@ -173,6 +173,7 @@ main {
   main .main-box {
     height: 608px;
     width: 610px;
+    min-width: 610px;
     border: 5px solid #f84800;
     margin: 0 auto 50px auto;
     display: -webkit-box;
@@ -299,6 +300,29 @@ button:hover {
   -webkit-box-shadow: 0px 0px 150px #f84800;
   box-shadow: 0px 0px 150px #f84800; }
 
+@media (max-width: 1300px) {
+  body {
+    max-width: 90%; }
+  .puzzle-Container {
+    width: 0; }
+  .container-Two {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0 auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .bord {
+    border: 1px solid white; } }
+
+@media (max-width: 700px) {
+  body {
+    max-width: 95%; } }
+
 .header-Wrapper {
   width: 70%; }
 
@@ -332,7 +356,8 @@ header {
     color: white;
     letter-spacing: 1px;
     line-height: 24px;
-    text-shadow: 1px 1px black; }
+    text-shadow: 1px 1px black;
+    margin: 0; }
   header ul {
     padding: 0;
     margin: 60px;
@@ -353,6 +378,25 @@ header {
     color: white;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;
+    margin-top: 20px; }
   header .fa-arrow-circle-down:hover {
     color: #f84800; }
+
+@media (max-width: 1080px) {
+  header h1 {
+    font-size: 90px; }
+  .header-Wrapper {
+    width: 90%; } }
+
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 70px; }
+  header p {
+    font-size: 1.5rem; }
+  header ul {
+    margin: 50px 0 50px 0; } }
+
+@media (max-width: 660px) {
+  header p {
+    font-size: 1.2rem; } }
