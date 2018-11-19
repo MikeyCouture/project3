@@ -45,7 +45,7 @@ pugApp.listenForBoxClick = function () {
             setTimeout(function () {
                 console.log(setTimeout);
                 $(".winner-box").addClass("winner-Display");
-            }, 3000);
+            }, 2500);
             clearTimeout(timeoutId);
         }
 
