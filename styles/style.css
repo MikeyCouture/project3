@@ -145,10 +145,12 @@ body {
   background-blend-mode: overlay; }
 
 img {
-  display: block; }
-
-.bord {
-  border: 4px solid white; }
+  display: block;
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: 150px; }
 
 .overlay {
   position: absolute;
@@ -171,25 +173,20 @@ main {
     display: -ms-flexbox;
     display: flex; }
   main .main-box {
-    height: 608px;
-    width: 610px;
-    min-width: 610px;
+    width: 50%;
+    height: auto;
     border: 5px solid #f84800;
-    margin: 0 auto 50px auto;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     main .main-box .box {
-      position: relative;
-      width: calc(33.3%);
-      height: calc(33.3%);
-      cursor: pointer; }
+      width: 33.333%;
+      cursor: pointer;
+      display: inline-block;
+      height: 150px; }
       main .main-box .box p {
         color: #0006;
         display: -webkit-box;
@@ -219,11 +216,7 @@ main {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 208px; }
+  flex-direction: column; }
 
 .container-Two {
   display: -webkit-box;
@@ -322,6 +315,11 @@ button:hover {
 @media (max-width: 700px) {
   body {
     max-width: 95%; } }
+
+.timeDiv {
+  margin: 0 auto; }
+  .timeDiv p {
+    color: white; }
 
 .header-Wrapper {
   width: 70%; }

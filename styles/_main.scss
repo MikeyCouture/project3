@@ -10,11 +10,15 @@ body{
 
 img{
     display: block;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    max-width: 150px;
 }
 
-.bord{
-        border: 4px solid white;
-}
+// .bord{
+//         border: 4px solid white;
+// }
 
 .overlay{
     position: absolute;
@@ -34,19 +38,17 @@ main{
         display: flex;
     }
     .main-box{
-        height: 608px;
-        width: 610px;
-        min-width: 610px;
+        width: 50%;
+        height: auto;
         border: 5px solid #f84800;
-        margin: 0 auto 50px auto;
+        margin: 0 auto;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         .box{
-            position: relative;
-            width: calc(33.3%);
-            height: calc(33.3%);
+            width: 33.333%;
             cursor: pointer;
+            display: inline-block;
+            height: 150px;
             p{
                 color: #0006;
                 display: flex;
@@ -69,11 +71,12 @@ main{
     border: 1px solid #f84800;
 }
 
+
 .puzzle-Container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 208px;
+    // justify-content: space-between;
+    // width: 208px;
 }
 
 .container-Two{
@@ -167,5 +170,13 @@ button:hover{
 @media(max-width: 700px){
     body{
         max-width: 95%;
+    }
+}
+
+
+.timeDiv{
+    margin: 0 auto;
+    p{
+        color: white;
     }
 }
