@@ -146,11 +146,10 @@ body {
 
 img {
   display: block;
-  width: auto;
-  height: auto;
-  -o-object-fit: cover;
-  object-fit: cover;
-  max-width: 150px; }
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+  object-fit: fill; }
 
 .overlay {
   position: absolute;
@@ -173,20 +172,23 @@ main {
     display: -ms-flexbox;
     display: flex; }
   main .main-box {
-    width: 50%;
-    height: auto;
+    width: 450px;
+    height: 420px;
     border: 5px solid #f84800;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    -webkit-box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px; }
     main .main-box .box {
       width: 33.333%;
       cursor: pointer;
-      display: inline-block;
-      height: 150px; }
+      display: block;
+      height: 33.33%; }
       main .main-box .box p {
         color: #0006;
         display: -webkit-box;
@@ -216,7 +218,16 @@ main {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 20%; }
+  .puzzle-Container a {
+    max-width: 70%;
+    margin: 2px; }
+
+.section-Two {
+  height: 150px; }
+  .section-Two a {
+    margin: 2px; }
 
 .container-Two {
   display: -webkit-box;
@@ -226,7 +237,8 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 40%; }
 
 .boxShadow {
   -webkit-box-shadow: 0px 0px 45px #f84800;
@@ -261,7 +273,7 @@ main {
 
 .congrats {
   color: #002654;
-  margin-top: 120px; }
+  margin-top: 40px; }
 
 .winner-box p {
   font-family: "Niramit";
@@ -319,7 +331,8 @@ button:hover {
 .timeDiv {
   margin: 0 auto; }
   .timeDiv p {
-    color: white; }
+    color: white;
+    font-size: 30px; }
 
 .header-Wrapper {
   width: 70%; }

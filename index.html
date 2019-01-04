@@ -29,9 +29,10 @@
 
     <main>
         <div class="timeDiv">
-            <p id="timer">0:00</p>
+            <p id="timer">00</p>
         </div>
         <div class="winner-box">
+            <p class="officialTime">Time: </p>
             <p class="congrats">Congrats! You're an expert Pug Puzzle Master!</p>
             <p>Play Again?</p>
             <button class="play-Again">Pug Yeah!</button>
@@ -40,20 +41,20 @@
         <section>
 
             <div class="puzzle-Container">
-                <a href="" class="item item1 bord" data-aos="zoom-in-right" data-aos-delay="300" data-pic="1">
+                <a href="" draggable="true" class="item item1 bord" data-aos="zoom-in-right" data-aos-delay="300" data-aos-once="true" data-pic="1">
                     <img class="animated fadeIn" src="./assets/Pug_1.jpg" id="pugPic1" alt="">
                     <div class="overlay"></div>
                 </a>
                 
     
-                <a href="" class="item item2 bord" data-aos="zoom-in-right" data-pic="2"><img class="animated fadeIn" src="./assets/Pug_2.jpg" alt=""></a>
+                <a href="" draggable="true" class="item item2 bord" data-aos="zoom-in-right" data-aos-once="true" data-pic="2"><img class="animated fadeIn" src="./assets/Pug_2.jpg" alt=""></a>
     
-                <a href="" class="item item3 bord" data-aos="fade-up-right"data-pic="3"><img class="animated fadeIn" src="./assets/Pug_3.jpg" alt=""></a>
+                <a href="" draggable="true" class="item item3 bord" data-aos="fade-up-right" data-aos-once="true" data-pic="3"><img class="animated fadeIn" src="./assets/Pug_3.jpg" alt=""></a>
             </div>
 
             <a href="" name="pugGame" data-aos="fade-up" data-aos-delay="1000"></a>
             <div class="main-box">
-                <div class="box box1 box-border" data-box="1"><p class="num">1</p></div>
+                <div dropzone="move" class="box box1 box-border" data-box="1"><p class="num">1</p></div>
                 <div class="box box2 box-border" data-box="2"><p class="num">2</p></div>
                 <div class="box box3 box-border" data-box="3"><p class="num">3</p></div>
                 <div class="box box4 box-border" data-box="4"><p class="num">4</p></div>
@@ -65,16 +66,16 @@
             </div>
 
             <div class="puzzle-Container">
-                <a href="" class="item item5 bord" data-aos="zoom-in-left" data-aos-delay="800" data-pic="5"><img class="animated fadeIn" src="./assets/Pug_5.jpg" alt=""></a>
-                <a href="" class="item item6 bord" data-aos="zoom-in-left" data-pic="6"><img class="animated fadeIn" src="./assets/Pug_6.jpg" alt=""></a>
-                <a href="" class="item item7 animated fadeInUpBig bord" data-pic="7"><img class="animated fadeIn" src="./assets/Pug_7.jpg" alt=""></a>
+                <a href="" draggable="true" class="item item5 bord" data-aos="zoom-in-left" data-aos-delay="800" data-aos-once="true" data-pic="5"><img class="animated fadeIn" src="./assets/Pug_5.jpg" alt=""></a>
+                <a href="" class="item item6 bord" data-aos="zoom-in-left" data-aos-once="true" data-pic="6"><img class="animated fadeIn" src="./assets/Pug_6.jpg" alt=""></a>
+                <a href="" class="item item7 animated fadeInUpBig bord" data-aos-once="true" data-pic="7"><img class="animated fadeIn" src="./assets/Pug_7.jpg" alt=""></a>
             </div>
         </section>
         <section class="section-Two">
             <div class="container-Two">
-                <a href="" class="item item4 animated fadeInUpBig bord" data-pic="4"><img class="animated fadeIn" src="./assets/Pug_4.jpg" alt=""></a>
-                <a href="" class="item item8 animated fadeInUpBig bord" data-pic="8"><img class="animated fadeIn" src="./assets/Pug_8.jpg" alt=""></a>
-                <a href="" class="item item9 animated fadeInUpBig bord" data-pic="9"><img class="animated fadeIn" src="./assets/Pug_9.jpg" alt=""></a>
+                <a href="" class="item item4 animated fadeInUpBig bord" data-aos-once="true" data-pic="4"><img class="animated fadeIn" src="./assets/Pug_4.jpg" alt=""></a>
+                <a href="" class="item item8 animated fadeInUpBig bord" data-aos-once="true" data-pic="8"><img class="animated fadeIn" src="./assets/Pug_8.jpg" alt=""></a>
+                <a href="" class="item item9 animated fadeInUpBig bord" data-aos-once="true" data-pic="9"><img class="animated fadeIn" src="./assets/Pug_9.jpg" alt=""></a>
             </div>
         </section>
     </main>

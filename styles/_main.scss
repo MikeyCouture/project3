@@ -10,10 +10,10 @@ body{
 
 img{
     display: block;
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    max-width: 150px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    // max-width: 150px;
 }
 
 // .bord{
@@ -38,17 +38,20 @@ main{
         display: flex;
     }
     .main-box{
-        width: 50%;
-        height: auto;
+        width: 450px;
+        height: 420px;
         border: 5px solid #f84800;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 5px;
+
         .box{
             width: 33.333%;
             cursor: pointer;
-            display: inline-block;
-            height: 150px;
+            display: block;
+            height: 33.33%;
             p{
                 color: #0006;
                 display: flex;
@@ -75,14 +78,25 @@ main{
 .puzzle-Container{
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    // width: 208px;
+    width: 20%;
+    a{
+        max-width: 70%;
+        margin: 2px;
+    }
+}
+
+.section-Two{
+    height: 150px;
+    a{
+        margin: 2px;
+    }
 }
 
 .container-Two{
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    max-width: 40%;
 }
 
 .boxShadow{
@@ -110,7 +124,7 @@ main{
 }
     .congrats{
         color: #002654;
-        margin-top: 120px;
+        margin-top: 40px;
     }
 
 .winner-box p{
@@ -178,5 +192,6 @@ button:hover{
     margin: 0 auto;
     p{
         color: white;
+        font-size: 30px;
     }
 }
