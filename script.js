@@ -106,6 +106,7 @@ pugApp.timeOutAndResize = function () {
 
    $(".fas").on("click", function () {
         console.log('clicked!');
+        // addMain();
 
         function timeIt() {
             counter++;
@@ -115,8 +116,14 @@ pugApp.timeOutAndResize = function () {
                 clearInterval(myTimer);
             };
         }
-
         let myTimer = setInterval(timeIt, 1000);
+
+        // function addMain(){
+        //     document.querySelector("main").addClass(".mainFlex");
+        // }
+
+        document.getElementById("main").classList.add("mainFlex");
+        // $('#main').addClass(".mainFlex");
     });
 
     $(window).resize(function () {

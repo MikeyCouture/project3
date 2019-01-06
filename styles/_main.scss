@@ -29,10 +29,13 @@ img{
     // background: black;
 }
 
+.mainFlex{
+    display: flex;
+}
 
 main{
     margin: 0 auto;
-    display: flex;
+    display: none;
     flex-direction: column;
     section{
         display: flex;
@@ -89,6 +92,7 @@ main{
     height: 150px;
     a{
         margin: 2px;
+        width: 150px;
     }
 }
 
@@ -96,7 +100,7 @@ main{
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    max-width: 40%;
+    max-width: 45%;
 }
 
 .boxShadow{

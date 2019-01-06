@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <!-- MAIN HEADER - INCLUDES TITLE/INSTRUCTIONS/START BUTTON -->
     <header class="header-Wrapper">
         <h1 class="animated infinite pulse slow">Pug Puzzle!</h1>
         <p>Ready to solve the ultimate pug puzzle?!</p>
         <ul class="instructions">
-            <li>Click the arrow below to begin the game.</li>
-            <li>Select an item then select the corresponding box.</li>
-            <li>Time is of the essence! You'll have 45 seconds to complete.</li>
+            <li>Click the arrow below to begin.</li>
+            <li>Drag & drop the pictures to the corresponding box.</li>
+            <li>complete the puzzle as fast as possible to become the master!</li>
             <li>Best of Luck! 🐶</li>
             <!-- <li></li> -->
         </ul>
@@ -27,10 +28,12 @@
         <a href="#pugGame"><i class="fas fa-arrow-circle-down"></i></a>
     </header>
 
-    <main>
+    <!-- MAIN BODY - INCLUDES PICS / GAME GRID -->
+    <main id="main">
         <div class="timeDiv">
-            <p id="timer">00</p>
+            <p id="timer">0:00</p>
         </div>
+        <!-- WINNER BOX - THIS SHOWS UP WHEN PUZZLE IS COMPLETED -->
         <div class="winner-box">
             <p class="officialTime">Time: </p>
             <p class="congrats">Congrats! You're an expert Pug Puzzle Master!</p>
@@ -38,20 +41,19 @@
             <button class="play-Again">Pug Yeah!</button>
         </div>
 
+<!-- CONTAINER ONE FOR PICS -->
         <section>
-
             <div class="puzzle-Container">
                 <a href="" draggable="true" class="item item1 bord" data-aos="zoom-in-right" data-aos-delay="300" data-aos-once="true" data-pic="1">
                     <img class="animated fadeIn" src="./assets/Pug_1.jpg" id="pugPic1" alt="">
                     <div class="overlay"></div>
                 </a>
                 
-    
                 <a href="" draggable="true" class="item item2 bord" data-aos="zoom-in-right" data-aos-once="true" data-pic="2"><img class="animated fadeIn" src="./assets/Pug_2.jpg" alt=""></a>
     
                 <a href="" draggable="true" class="item item3 bord" data-aos="fade-up-right" data-aos-once="true" data-pic="3"><img class="animated fadeIn" src="./assets/Pug_3.jpg" alt=""></a>
             </div>
-
+<!-- MAIN GRID -->
             <a href="" name="pugGame" data-aos="fade-up" data-aos-delay="1000"></a>
             <div class="main-box">
                 <div dropzone="move" class="box box1 box-border" data-box="1"><p class="num">1</p></div>
@@ -64,13 +66,14 @@
                 <div class="box box8 box-border" data-box="8"><p class="num">8</p></div>
                 <div class="box box9 box-border" data-box="9"><p class="num">9</p></div>
             </div>
-
+<!-- CONTAINER TWO FOR PICS -->
             <div class="puzzle-Container">
                 <a href="" draggable="true" class="item item5 bord" data-aos="zoom-in-left" data-aos-delay="800" data-aos-once="true" data-pic="5"><img class="animated fadeIn" src="./assets/Pug_5.jpg" alt=""></a>
                 <a href="" class="item item6 bord" data-aos="zoom-in-left" data-aos-once="true" data-pic="6"><img class="animated fadeIn" src="./assets/Pug_6.jpg" alt=""></a>
                 <a href="" class="item item7 animated fadeInUpBig bord" data-aos-once="true" data-pic="7"><img class="animated fadeIn" src="./assets/Pug_7.jpg" alt=""></a>
             </div>
         </section>
+<!-- BOTTM CONTAINER FOR PICS -->
         <section class="section-Two">
             <div class="container-Two">
                 <a href="" class="item item4 animated fadeInUpBig bord" data-aos-once="true" data-pic="4"><img class="animated fadeIn" src="./assets/Pug_4.jpg" alt=""></a>
